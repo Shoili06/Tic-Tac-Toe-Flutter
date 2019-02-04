@@ -145,7 +145,8 @@ class _HomePageState extends State<HomePage> {
       if (winner == 1) {
 
         CountDown cd = CountDown(Duration(seconds : 1));
-        var sub = cd.stream.listen(null);
+        var sub;
+        sub = cd.stream.listen(null);
         sub.onDone(() {
           showDialog(
               context: context,
@@ -156,7 +157,8 @@ class _HomePageState extends State<HomePage> {
       }
       else {
         CountDown cd = CountDown(Duration(seconds : 1));
-        var sub = cd.stream.listen(null);
+        var sub;
+        sub = cd.stream.listen(null);
         sub.onDone(() {
           showDialog(
               context: context,
