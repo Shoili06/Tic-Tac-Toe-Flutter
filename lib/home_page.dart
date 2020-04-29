@@ -68,8 +68,7 @@ class _HomePageState extends State<HomePage> {
             showDialog(
                 context: context,
                 builder: (_)=>new CustomDialog("Game tied",
-                    "Press Reset to start a new game.", resetGame)); // not sure enough. documentation e dekhlam janina hbe ki na
-
+                    "Press Reset to start a new game.", resetGame)); 
           });
         }
         else{
